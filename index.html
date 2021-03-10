@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no,email=no" />
+		<title>💰💰💰</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				font-size: 0;
+			}
+			.box {
+				display: inline-block;
+				width: 50%;
+			}
+			iframe {
+				width: 100%;
+				margin: 0;
+				border: 0;
+			}
+			.go {
+				width: 100%;
+				font-size: 20px;
+				line-height: 35px;
+				text-align: center;
+				background: #f44336;
+				color: #fff;
+			}
+			.green {
+				background: #07c160;
+			}
+		</style>
+	</head>
+	<body data-page="share">
+		<div class="box">
+			<iframe src="https://www.mercari.com/jp/search/?keyword=burberry+%E3%83%8F%E3%83%B3%E3%83%89%E3%83%90%E3%83%83%E3%82%B0"></iframe>
+			<div class="go">go</div>
+		</div>
+		<div class="box">
+			<iframe src="https://www.mercari.com/jp/brand/7294/209/"></iframe>
+			<div class="go">go</div>
+		</div>
+		<div class="box">
+			<iframe src="https://www.mercari.com/jp/brand/908/214/"></iframe>
+			<div class="go">go</div>
+		</div>
+		<div class="box">
+			<iframe src="https://www.mercari.com/jp/brand/908/209/"></iframe>
+			<div class="go">go</div>
+		</div>
+		<div class="box">
+			<iframe src="https://www.mercari.com/jp/brand/908/208/"></iframe>
+			<div class="go">go</div>
+		</div>
+		<div class="box">
+			<iframe src="https://www.mercari.com/jp/brand/7294/208/"></iframe>
+			<div class="go">go</div>
+		</div>
+		<div class="box">
+			<iframe src="https://www.mercari.com/jp/brand/7294/214/"></iframe>
+			<div class="go green">go</div>
+		</div>
+		<div class="box">
+			<iframe src="https://www.mercari.com/jp/search/?keyword=prada%E3%83%8F%E3%83%B3%E3%83%89%E3%83%90%E3%83%83%E3%82%B0"></iframe>
+			<div class="go">go</div>
+		</div>
+		<div class="box">
+			<iframe src="https://www.mercari.com/jp/brand/1044/214/"></iframe>
+			<div class="go">go</div>
+		</div>
+		<div class="box">
+			<iframe src="https://www.mercari.com/jp/brand/1044/208/?page=1"></iframe>
+			<div class="go">go</div>
+		</div>
+		<script>
+			setInterval(function() {
+				location.reload()
+			}, 3000)
+			document.body.addEventListener('click', function(e) {
+				if (e.target.className === 'go') {
+					// console.log(e.target, e.target.previousSibling.previousSibling.nodeName.toLocaleUpperCase() === 'iframe')
+					const url = e.target.previousSibling.previousSibling.src
+					location.href = url
+				}
+			})
+		</script>
+	</body>
+</html>
